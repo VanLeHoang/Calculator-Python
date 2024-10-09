@@ -14,9 +14,10 @@ def handle_button_click(clicked_button_text):
             if result.is_integer():
                 result = int(result)
 
-            result_var.set(result)
         except Exception as e:
             result_var.set("Error")
+        result_var.set(result)
+        
     elif clicked_button_text == "C":
         result_var.set("")
     elif clicked_button_text == "%":
